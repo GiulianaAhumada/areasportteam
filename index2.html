@@ -26,10 +26,10 @@
             <div class="btn">
                 <i class="fas fa-times close-btn"></i>
             </div>
-            <a href="#inicio">Inicio</a>
-            <a href="#noticias">Noticias</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#jugadores">Jugadores</a>
+            <a class="close" href="#inicio">Inicio</a>
+            <a class="close-2" href="#noticias">Noticias</a>
+            <a class="close-3" href="#servicios">Servicios</a>
+            <a class="close-4" href="#jugadores">Jugadores</a>
         </div>
         <div class="btn">
             <i class="fas fa-bars menu-btn"></i>
@@ -1080,13 +1080,13 @@
       
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="text/javascript">
-          const mediaQuery = window.matchMedia("(max-width: 320px)");
+          const mediaQuery = window.matchMedia("(max-width: 1024px)");
       
           // Función para manejar el cambio en la media query
           const handleMediaChange = (mediaQuery) => {
             if (mediaQuery.matches) {
               // La condición de la media query se cumple (ancho de la ventana <= 320px)
-              console.log("La ventana tiene un ancho igual o menor a 320px");
+              console.log("La ventana tiene un ancho igual o menor a x");
               var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
                 spaceBetween: 100,
@@ -1157,7 +1157,7 @@
               });
             }
           };
-          const mediaQuery2 = window.matchMedia("(max-width: 320px)");
+          const mediaQuery2 = window.matchMedia("(max-width: 1024px)");
       
           // Función para manejar el cambio en la media query
           const handleMediaChange2 = (mediaQuery) => {
@@ -1249,6 +1249,10 @@
           var menu = document.querySelector('.menu');
           var menuBtn = document.querySelector('.menu-btn');
           var closeBtn = document.querySelector('.close-btn');
+          var inicio = document.querySelector('.close');
+          var noticias = document.querySelector('.close-2');
+          var servicios = document.querySelector('.close-3');
+          var jugadores = document.querySelector('.close-4');
       
           menuBtn.addEventListener("click", () => {
             menu.classList.add('active');
@@ -1257,6 +1261,22 @@
           closeBtn.addEventListener("click", () => {
             menu.classList.remove('active');
           });
+
+          inicio.addEventListener("click", () =>{
+            menu.classList.remove('active');
+          });
+          noticias.addEventListener("click", () =>{
+            menu.classList.remove('active');
+          });
+          servicios.addEventListener("click", () =>{
+            menu.classList.remove('active');
+          });
+          jugadores.addEventListener("click", () =>{
+            menu.classList.remove('active');
+          });
+
+
+
         </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
@@ -1293,16 +1313,16 @@
                     Links Menu
                   </h6>
                   <p>
-                    <a class="text-white">Inicio</a>
+                    <a class="text-white" href="#inicio">Inicio</a>
                   </p>
                   <p>
-                    <a class="text-white">Noticias</a>
+                    <a class="text-white" href="#noticias">Noticias</a>
                   </p>
                   <p>
-                    <a class="text-white">Jugadores</a>
+                    <a class="text-white" href="#jugadores">Jugadores</a>
                   </p>
                   <p>
-                    <a class="text-white">Contacto</a>
+                    <a class="text-white" href="#contacto">Contacto</a>
                   </p>
                 </div>
       

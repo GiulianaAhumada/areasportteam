@@ -76,6 +76,16 @@ header .btn {
 .logo:hover {
     transform: scale(1.1);
 }
+.close-2 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    padding: 0 10px;
+    transition: all 0.3s;
+    text-shadow: 2px 2px 4px rgb(189, 189, 189);
+    font-weight: 400;
+}
 @media (max-width: 1200px){
     header {
         justify-content: space-between;
@@ -692,19 +702,19 @@ a {
     /* Servicios */
     .swiper-button-next::after {
         position: relative;
-        left: 0px;
+        left: 60px;
     }
     .swiper-button-prev::after {
         position: relative;
-        right: 0px;
+        right: 60px;
     }
     .swiper-button-next2 {
         position: relative;
-        left: 0px;
+        left: 40px;
     }
     .swiper-button-prev2 {
         position: relative;
-        right: 0px;
+        right: 40px;
     }
 }
 @media (max-width: 1024px){
@@ -1051,6 +1061,9 @@ a {
         position: relative;
         top: 75px;
         font-size: 12px;
+    }
+    .contenedor-jugadores .titulo h1 {
+        font-size: 30px;
     }
 }   
 /*Media*//*Media*//*Media*//*Media*//*Media*//*Media*//*Media*/
